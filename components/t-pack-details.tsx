@@ -1,4 +1,13 @@
-import Image from "next/image";
+"use client";
+
+import {
+  FaPlaneArrival,
+  FaHotel,
+  FaCity,
+  FaBus,
+  FaTicketAlt
+} from "react-icons/fa";
+
 export default function PackageDetails() {
   return (
     <section className="max-w-7xl mx-auto px-6 py-12">
@@ -110,12 +119,32 @@ export default function PackageDetails() {
               </h4>
 
               <ul className="space-y-3 text-gray-600">
-                <li> <Image src="/air.png" alt="Airport transfer" width={20} height={20} className="inline mr-2" /> Airport transfers</li>
-                <li><Image src="/hotel.png" alt="Hotel_accommodation" width={20} height={20} className="inline mr-2" /> Hotel accommodation</li>
-                <li><Image src="/city.png" alt="City tours & sightseeing" width={20} height={20} className="inline mr-2" /> City tours & sightseeing</li>
-                <li><Image src="/dream.png" alt="Dream World Theme Park visit" width={20} height={20} className="inline mr-2" /> Dream World Theme Park visit</li>
-                <li><Image src="/local.png" alt="Local transportation" width={20} height={20} className="inline mr-2" /> Local transportation</li>
+                <li className="flex items-center gap-3">
+                  <FaPlaneArrival className="text-gray-700 text-lg" />
+                  Airport transfers
+                </li>
+              
+                <li className="flex items-center gap-3">
+                  <FaHotel className="text-gray-700 text-lg" />
+                  Hotel accommodation
+                </li>
+              
+                <li className="flex items-center gap-3">
+                  <FaCity className="text-gray-700 text-lg" />
+                  City tours & sightseeing
+                </li>
+              
+                <li className="flex items-center gap-3">
+                  <FaTicketAlt className="text-gray-700 text-lg" />
+                  Dream World Theme Park visit
+                </li>
+              
+                <li className="flex items-center gap-3">
+                  <FaBus className="text-gray-700 text-lg" />
+                  Local transportation
+                </li>
               </ul>
+
             </div>
           </div>
         </div>
