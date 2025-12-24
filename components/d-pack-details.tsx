@@ -1,3 +1,5 @@
+"use client";
+
 import {
   FaPlaneArrival,
   FaHotel,
@@ -19,12 +21,10 @@ export default function PackageDetails() {
 
           <p className="text-gray-600 leading-relaxed mb-4">
             Experience the glamour and excitement of Dubai with a thoughtfully planned city tour that blends luxury, culture, and adventure. From iconic city landmarks and world-famous attractions to thrilling desert experiences, this journey offers a perfect balance of guided sightseeing and unforgettable moments.
-
           </p>
 
-
           <p className="text-gray-600 leading-relaxed mb-8">
-          Ideal for travelers seeking a modern, exciting, and well-organized international holiday.
+            Ideal for travelers seeking a modern, exciting, and well-organized international holiday.
           </p>
 
           <h3 className="text-xl font-semibold text-gray-900 mb-6">
@@ -32,7 +32,6 @@ export default function PackageDetails() {
           </h3>
 
           <div className="space-y-6 text-gray-600">
-            {/* Day 1 */}
             <div>
               <h4 className="font-semibold text-gray-900 mb-2">
                 Day 1 – Arrival in Dubai
@@ -44,7 +43,6 @@ export default function PackageDetails() {
               </ul>
             </div>
 
-            {/* Day 2 */}
             <div>
               <h4 className="font-semibold text-gray-900 mb-2">
                 Day 2 – City Highlights
@@ -56,7 +54,6 @@ export default function PackageDetails() {
               </ul>
             </div>
 
-            {/* Day 3 */}
             <div>
               <h4 className="font-semibold text-gray-900 mb-2">
                 Day 3 – Desert Adventure
@@ -68,7 +65,6 @@ export default function PackageDetails() {
               </ul>
             </div>
 
-            {/* Day 4 */}
             <div>
               <h4 className="font-semibold text-gray-900 mb-2">
                 Day 4 – Attractions & Leisure
@@ -79,7 +75,7 @@ export default function PackageDetails() {
                 <li>Enjoy shopping, culture, and entertainment</li>
               </ul>
             </div>
-            {/* Day 5 */}
+
             <div>
               <h4 className="font-semibold text-gray-900 mb-2">
                 Day 5 – Departure
@@ -117,32 +113,29 @@ export default function PackageDetails() {
                 Facilities
               </h4>
 
-                            <ul className="space-y-3 text-gray-600">
+              <ul className="space-y-3 text-gray-600">
                 <li className="flex items-center gap-3">
                   <FaPlaneArrival className="text-gray-700 text-lg" />
                   Airport transfers
                 </li>
-
                 <li className="flex items-center gap-3">
                   <FaHotel className="text-gray-700 text-lg" />
                   Hotel accommodation
                 </li>
-
                 <li className="flex items-center gap-3">
                   <FaPassport className="text-gray-700 text-lg" />
                   Visa assistance
                 </li>
-
                 <li className="flex items-center gap-3">
                   <FaBus className="text-gray-700 text-lg" />
                   Local transportation
                 </li>
-
                 <li className="flex items-center gap-3">
                   <FaHeadset className="text-gray-700 text-lg" />
                   Tour Coordination & Support
                 </li>
               </ul>
+
             </div>
           </div>
         </div>
