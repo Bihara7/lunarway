@@ -1,4 +1,11 @@
-import Image from "next/image";
+import {
+  FaPlaneArrival,
+  FaHotel,
+  FaPassport,
+  FaBus,
+  FaHeadset
+} from "react-icons/fa";
+
 export default function PackageDetails() {
   return (
     <section className="max-w-7xl mx-auto px-6 py-12">
@@ -111,12 +118,32 @@ export default function PackageDetails() {
               </h4>
 
               <ul className="space-y-3 text-gray-600">
-                <li> <Image src="/air.png" alt="Airport transfer" width={20} height={20} className="inline mr-2" /> Airport transfers</li>
-                <li><Image src="/hotel.png" alt="Hotel_accommodation" width={20} height={20} className="inline mr-2" /> Hotel accommodation</li>
-                <li><Image src="/visa.png" alt="visa assistance" width={20} height={20} className="inline mr-2" /> visa assistance</li>
-                <li><Image src="/local.png" alt="Local transportation" width={20} height={20} className="inline mr-2" /> Local transportation</li>
-                <li><Image src="/tour.png" alt="Tour Coordination & Support" width={20} height={20} className="inline mr-2" /> Tour Coordination & Support</li>
+                <li className="flex items-center gap-3">
+                  <FaPlaneArrival className="text-gray-700 text-lg" />
+                  Airport transfers
+                </li>
+              
+                <li className="flex items-center gap-3">
+                  <FaHotel className="text-gray-700 text-lg" />
+                  Hotel accommodation
+                </li>
+              
+                <li className="flex items-center gap-3">
+                  <FaPassport className="text-gray-700 text-lg" />
+                  Visa assistance
+                </li>
+              
+                <li className="flex items-center gap-3">
+                  <FaBus className="text-gray-700 text-lg" />
+                  Local transportation
+                </li>
+              
+                <li className="flex items-center gap-3">
+                  <FaHeadset className="text-gray-700 text-lg" />
+                  Tour Coordination & Support
+                </li>
               </ul>
+
             </div>
           </div>
         </div>
